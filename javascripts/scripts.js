@@ -4,15 +4,27 @@ var slideSpeed = 600;
 
 $(document).ready(function() {
 
-	$(".category-text").hide();
+	$(".main-container").hide();
 
-	$('#about-photo').hide().css('visibility', 'visible').fadeIn(1000);
-
-	$(".link-category" ).click(function() { 
+	$("#nav-about" ).click(function() { 
 	 		
-	 		$(".category-text").slideUp(slideSpeed);
+	 		$(".main-container").slideUp(400);
 
-	 		$(this).next().slideDown(slideSpeed);
+	 		$("#div-about").slideDown(slideSpeed);
+	});	
+
+	$("#nav-music" ).click(function() { 
+	 		
+	 		$(".main-container").slideUp(400);
+
+	 		$("#div-music").slideDown(slideSpeed);
+	});	
+
+	$("#nav-photographs" ).click(function() { 
+	 		
+	 		$(".main-container").slideUp(400);
+
+	 		$("#div-photographs").slideDown(slideSpeed);
 	});	
 });
 

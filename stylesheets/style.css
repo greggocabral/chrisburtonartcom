@@ -26,7 +26,7 @@ header{
   font-family: proximaNova;
   src: local("Proxima Nova"),
        local("Proxima Nova"),
-       url(fonts/proximanova-black-webfont.ttf);
+       url(fonts/proximanova-semibold-webfont.ttf);
   font-weight: bold;
 }
 
@@ -36,10 +36,11 @@ body {
   overflow-x: hidden;
   font-family: proximaNova,"Proxima Nova",Helvetica,Arial,sans-serif;
   font-size: 14px;
+  letter-spacing: 6px;
   line-height: 0.9;
   color: #333;
   background-image:url(../img/background.png);
-  background-size: cover;
+  background-size: initial;
 
 }
 
@@ -55,13 +56,16 @@ h6 {
 }
 
 h6 {
-    font-size: 7vw;
+      font-size: 50px;
   }
 
 
 .bar{
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 1px; 
 
 }
 
@@ -72,8 +76,10 @@ h6 {
     padding-left: 15px;
     float: left;
     width: 16%;
-    font-size: 2vw;
+    font-size: 25px;
     color: white;
+
+
  }
 
  .nav-icon{
@@ -82,7 +88,7 @@ h6 {
     padding-right: 15px;
     padding-left: 15px;
     float: right;
-    font-size: 2vw;
+    font-size: 25px;
     color: white;
  }
 
@@ -90,10 +96,48 @@ h6 {
   clear:both;
  }
 
- #div-main{
-  margin-top:20%;
-  color: white;
+ .main-container{
+  background-color: white;
+  color: black;
+
  }
+
+ .nav-item:hover,
+  a:hover{
+  color: black;
+  cursor: pointer;
+}
+
+ #div-home, 
+ #div-about{
+  padding-top:100px;
+  color: white;
+  background: transparent;
+ }
+
+#about-text{
+  width: 50%;
+  font-size: 20px;
+}
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: 
+  hidden; 
+  max-width: 100%; 
+} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+  position: absolute; 
+  top: 0; 
+  left: 10%; 
+  right: 10%; 
+  width: 80%; 
+  height: 100%; 
+}
 
 /*a{
   text-decoration: none;
