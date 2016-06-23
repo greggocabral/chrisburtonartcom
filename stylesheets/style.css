@@ -23,17 +23,18 @@ header{
 }
 
 @font-face {
-  font-family: baseFont;
-  src: local("Base Font"),
-       local("Base Font"),
-       url(fonts/MyriadPro-Regular.ttf);
+  font-family: proximaNova;
+  src: local("Proxima Nova"),
+       local("Proxima Nova"),
+       url(fonts/proximanova-black-webfont.ttf);
   font-weight: bold;
 }
+
 
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: baseFont,"Base Font",Helvetica,Arial,sans-serif;
+  font-family: proximaNova,"Proxima Nova",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 0.9;
   color: #333;
