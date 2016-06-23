@@ -38,7 +38,8 @@ body {
   font-size: 14px;
   line-height: 0.9;
   color: #333;
-  background-color: white;
+  background-image:url(../img/background.png);
+  background-size: cover;
 
 }
 
@@ -53,7 +54,48 @@ h6 {
     margin: 0px;
 }
 
-a{
+h6 {
+    font-size: 7vw;
+  }
+
+
+.bar{
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.nav-item{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 16%;
+    font-size: 2vw;
+    color: white;
+ }
+
+ .nav-icon{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: right;
+    font-size: 2vw;
+    color: white;
+ }
+
+ .linebreak{
+  clear:both;
+ }
+
+ #div-main{
+  margin-top:20%;
+  color: white;
+ }
+
+/*a{
   text-decoration: none;
   color: #333;
 }
@@ -75,28 +117,20 @@ a:hover{
   margin-top: 15px;
   margin-bottom: 10px;
   line-height: 1.2;
-}
+}*/
 
-#about-photo{
-  visibility: hidden;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+, IE10 */
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-  -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-  -webkit-backface-visibility: hidden; /* Fix for transition flickering */
-}
-#about-photo:hover {
+/*#about-photo:hover {
    filter: none;
     -webkit-filter: grayscale(0%);
 }
 
 #about-text{
   visibility: hide;
-}
+}*/
 
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) {
-  .section{
+  /*.section{
       position: relative;
       min-height: 1px;
       padding-right: 15px;
@@ -167,7 +201,7 @@ a:hover{
 
   h6 {
       font-size: 9vh;
-  }
+  }*/
 
 }
 
@@ -175,7 +209,7 @@ a:hover{
 
 @media only screen and (min-width: 400px) {
    
-  .container{
+  /*.container{
     overflow: hidden;
   }  
 
@@ -187,9 +221,10 @@ a:hover{
     float: left;
     width: 50%;
     padding-bottom: 20010px;  /* X + padding-bottom */
-    margin-bottom: -20000px;  /* X */
-  }
-  
+    /*margin-bottom: -20000px;  /* X */
+ /* }*/
+
+  /*
   #div-main {
     margin-top: 5%;
   }
@@ -230,7 +265,7 @@ a:hover{
   #about-fullname{
     margin-left: 0px;
     text-align: left;
-  }
+  }*/
 
 }
 
