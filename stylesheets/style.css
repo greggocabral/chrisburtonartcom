@@ -55,42 +55,34 @@ h6 {
     margin: 0px;
 }
 
+h2 {
+      font-size: 20px;
+      padding-bottom: 20px;
+  }
+
+h4 {
+      font-size: 40px;
+  }
+
+
 h6 {
       font-size: 50px;
+  }
+
+  a{
+    color:white;
+    text-decoration: none;
   }
 
 
 .bar{
   padding-top: 10px;
   padding-bottom: 30px;
-  border-bottom-style: solid;
+  /*border-bottom-style: solid;
   border-bottom-color: white;
-  border-bottom-width: 1px; 
+  border-bottom-width: 1px; */
 
 }
-
-.nav-item{
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    float: left;
-    width: 16%;
-    font-size: 25px;
-    color: white;
-
-
- }
-
- .nav-icon{
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    float: right;
-    font-size: 25px;
-    color: white;
- }
 
  .linebreak{
   clear:both;
@@ -103,20 +95,22 @@ h6 {
  }
 
  .nav-item:hover,
+ .nav-icon:hover,
   a:hover{
   color: black;
   cursor: pointer;
 }
 
+
  #div-home, 
- #div-about{
-  padding-top:100px;
+ #div-about,
+ #div-music{
   color: white;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.5);
  }
 
 #about-text{
-  width: 50%;
+  width: 70%;
   font-size: 20px;
 }
 
@@ -137,6 +131,24 @@ h6 {
   right: 10%; 
   width: 80%; 
   height: 100%; 
+}
+
+
+.album-div{
+  padding-top:20px;
+  padding-left:5%;
+  padding-right:5%;
+  width:50%;
+  float: left;
+}
+
+.album-img{
+  max-width:100%;
+  max-height:100%;
+}
+
+#music-embed-container{
+  height:50px;
 }
 
 /*a{
@@ -173,7 +185,50 @@ a:hover{
 }*/
 
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1060px) {
+
+  .nav-item{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    display: block;
+    width:100%;
+    font-size: 30px;
+    color: white;
+
+
+ }
+
+ .nav-icon{
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: right;
+    display: block;
+    /*width:100%;*/
+    font-size: 20px;
+    color: white;
+ }
+
+
+#nav-email-text{
+  position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 4px;
+    float: right;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+
+}
+
   /*.section{
       position: relative;
       min-height: 1px;
@@ -251,8 +306,47 @@ a:hover{
 
 /*For desktop: -----------------------------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 1060px) {
    
+
+  .nav-item{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    display: inline-block;
+    /*min-width: 20%;*/
+    font-size: 25px;
+    color: white;
+
+
+ }
+
+ .nav-icon{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: right;
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+ }
+
+
+#nav-email-text{
+  position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    float: right;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: white;
+
+}
+
   /*.container{
     overflow: hidden;
   }  
