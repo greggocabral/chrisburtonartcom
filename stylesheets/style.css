@@ -81,8 +81,7 @@ h6 {
 }
 
 #background-img{
-  background-image:url(../img/background.jpg);
-  background-size: initial;
+ background-size: cover;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -170,9 +169,59 @@ h6 {
 
 }
 
+/*For small screens: -----------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+  #background-img{
+  background-image:url(../img/background-mobile.jpg);
+  }
+  .nav-item{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    display: block;
+    width:100%;
+    font-size: 30px;
+
+
+ }
+
+ .nav-icon{
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: right;
+    display: block;
+    /*width:100%;*/
+    font-size: 20px;
+ }
+
+
+#nav-email-text{
+  position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 4px;
+    float: right;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+
+}
+
+}
 
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 1060px) {
+@media only screen and (min-width: 600px) and (max-width: 1060px) {
+
+  #background-img{
+  background-image:url(../img/background.jpg);
+  }
 
   .nav-item{
     position: relative;
@@ -222,6 +271,10 @@ h6 {
 /*For desktop: -----------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 1060px) {
+
+   #background-img{
+  background-image:url(../img/background.jpg);
+}
    
 
   .nav-item{
