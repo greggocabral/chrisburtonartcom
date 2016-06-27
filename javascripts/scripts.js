@@ -1,37 +1,84 @@
 
 var slideSpeed = 600;
+var state = "home";
+
+function setContentStyle(){
+
+	$('#nav-bar').animate({color: 'black'},350);
+	$('#nav-bar').animate({'background-color': 'white'},350);
+	
+}
+function setHomeStyle(){
+	
+
+}
 
 
 $(document).ready(function() {
 
 	$(".main-container").hide();
 	$("#nav-email-text").hide();
+	setHomeStyle();
 
 	$("#nav-about" ).click(function() { 
 
-		    // $("#nav-email-text").animate({width: 0},350);
-	 		
-	 		$(".main-container").slideUp(400);
+		if (state != "about"){
 
-	 		$("#div-about").slideDown(slideSpeed);
+			$("#background-img").fadeOut(slideSpeed);
+		 	$(".main-container").fadeOut(slideSpeed);
+		 	$("#div-about").fadeIn(slideSpeed);
+
+		 	state = "about";
+	 	}
+	 	else{
+
+	 		$("#div-about").fadeOut(slideSpeed);
+	 		$("#background-img").fadeIn(slideSpeed);
+	 		state = "home";
+
+	 	}
 	});	
 
 	$("#nav-music" ).click(function() { 
 
-		    // $("#nav-email-text").animate({width: 0},350);
+		if (state != "music"){
 	 		
-	 		$(".main-container").slideUp(400);
+			$("#background-img").fadeOut(slideSpeed);
+	 		$(".main-container").fadeOut(slideSpeed);
+	 		$("#div-music").fadeIn(slideSpeed);
 
-	 		$("#div-music").slideDown(slideSpeed);
+	 		state = "music";
+	 		setContentStyle();
+	 	}
+	 	else{
+
+	 		$("#div-music").fadeOut(slideSpeed);
+	 		$("#background-img").fadeIn(slideSpeed);
+	 		state = "home";
+	 		setHomeStyle();
+
+	 	}
 	});	
 
 	$("#nav-photographs" ).click(function() { 
 
-			// $("#nav-email-text").hide().animate(350);
+		if (state != "photographs"){
 	 		
-	 		$(".main-container").slideUp(400);
+			$("#background-img").fadeOut(slideSpeed);
+	 		$(".main-container").fadeOut(slideSpeed);
+	 		$("#div-photographs").fadeIn(slideSpeed);
 
-	 		$("#div-photographs").slideDown(slideSpeed);
+	 		state = "photographs";
+	 		setContentStyle();
+	 	}
+	 	else{
+
+	 		$("#div-photographs").fadeOut(slideSpeed);
+	 		$("#background-img").fadeIn(slideSpeed);
+	 		state = "home";
+	 		setHomeStyle();
+
+	 	}
 	});	
 
 	$("#nav-email" ).click(function() { 
