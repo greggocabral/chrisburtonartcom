@@ -120,10 +120,12 @@ h6 {
 .embed-container { 
   position: relative; 
   padding-bottom: 56.25%; 
-  overflow: 
-  hidden; 
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; 
   max-width: 100%; 
 } 
+
+
 .embed-container iframe, 
 .embed-container object, 
 .embed-container embed { 
@@ -165,7 +167,7 @@ h6 {
 }
 
 #photo-embed-container{
-  min-height:800px;
+  min-height:300px;
 
 }
 
