@@ -153,7 +153,8 @@ h6 {
 
 #music-embed-container{
   /*height:400px;*/
-  min-height: 400px;
+  min-height: 70vh;
+  margin-top: 10px;
 }
 
 #about-img{
@@ -162,12 +163,12 @@ h6 {
   margin-left: 15px;
 }
 
-#photo-frame{
+/*#photo-frame{
   height:100%;
-}
+}*/
 
 #photo-embed-container{
-  min-height:300px;
+  min-height:70vh;
 
 }
 
