@@ -134,7 +134,7 @@ h6 {
   left: 10%; 
   right: 10%; 
   width: 80%; 
-  min-height: 400px;
+  min-height: 90vh;
 }
 
 
@@ -152,8 +152,7 @@ h6 {
 }
 
 #music-embed-container{
-  /*height:400px;*/
-  min-height: 70vh;
+  min-height: 90vh;
   margin-top: 10px;
 }
 
@@ -169,6 +168,7 @@ h6 {
 
 #photo-embed-container{
   min-height:70vh;
+  margin-top: 20px;
 
 }
 
